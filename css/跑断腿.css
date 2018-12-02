@@ -1,0 +1,196 @@
+
+.main{
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+/*搜索头部*/
+.ns_header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    z-index: 999;
+}
+/*搜索头部的内容*/
+.ns_header .ns_header_box{
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+    background: #f3f3f3;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+.ns_header .ns_header_box .sousuo{
+    position: absolute;
+    top: 8px;
+    right: 43px;
+}
+.ns_header .ns_header_box input{
+    font-size: 20px;
+    color: #bebebe;
+    padding-left: 20px;
+    padding-right: 30px;
+    border: 2px solid #c2c2ff;
+}
+::-webkit-input-placeholder {
+    color: #bebebe;
+    font-size: 20px;
+}
+ :-moz-placeholder {
+     color: #bebebe;
+     font-size: 20px;
+}
+  ::-moz-placeholder {
+  color: #bebebe;
+      font-size: 20px;
+}
+   :-ms-input-placeholder {
+       color: #bebebe;
+       font-size: 20px;}
+
+
+        /*轮播图部分开始*/
+.main .ns-banner{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        margin-top: 60px;
+    }
+.ns-banner ul:first-child{
+    width: 300%;
+}
+.father{
+    background-color: #999;
+    position: relative;
+}
+.ns-banner ul:first-child li{
+    float: left;
+    width:33.3%;
+}
+.ns-banner ul:first-child li img{
+    width: 100%;
+    display: block;
+}
+/*小圆点部分*/
+.ns-banner ul:last-child{
+    width: 118px;
+    height: 6px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+}
+
+.ns-banner ul:last-child li {
+    width: 10px;
+    height: 10px;
+    background-color: #b69bcf;
+    border-radius: 5px;
+    margin-left: 10px;
+    float: left;
+    cursor: pointer;
+}
+.ns-banner ul:last-child li:first-child{
+    margin-left: 0;
+}
+
+.ns-banner ul:last-child li:hover{
+    background: #d6040e;
+}
+.ns-banner ul:last-child .now{
+    background: #d6040e;
+}
+.tuijian{
+    position: absolute;
+    background: #d75967;
+    z-index: 5;
+    padding: 3px;
+    color: #fff;
+    top: 0;
+    left: 0;
+}
+/*内容部分开始*/
+.container{
+    width: 100%;
+    overflow: visible;
+}
+#tab_top{
+    width: 100%;
+    height: 65px;
+    margin-top: -10px;
+}
+#tab_top li{
+    float: left;
+    font-size: 16px;
+    height: 45px;
+    line-height: 45px;
+    margin: 10px;
+    color: #888;
+}
+#tab_top .current{
+    border-bottom: 3px solid #d75967;
+    color: #000;
+}
+#tab_bottom{
+    width: 100%;
+    height: 500px;
+}
+#tab_bottom li{
+    width: 100%;
+    height: 300px;
+}
+.no{
+    display: none;
+}
+#tab_bottom li div{
+    margin:10px 15px;
+}
+.huodong{
+    position: relative;
+}
+#tab_bottom li .huodong div{
+    background-color: rgba(0, 0, 0, 0.02);
+    position: absolute;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    width: 90%;
+    bottom: 0;
+}
+.huodong a img{
+    width: 100%;
+}
+/*导航栏部分*/
+
+.main .ns-nav{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    z-index: 999;
+    background-color: #fff;
+    text-align: center;
+    line-height: 60px;
+    min-width: 300px;
+    max-width: 640px;
+}
+.ns-nav ul{
+    text-align: center;
+    width: 100%;
+    min-width: 300px;
+    max-width: 640px;
+
+}
+.ns-nav ul li{
+    float: left;
+    line-height: 104px;
+    width: 25%;
+}
+.ns-nav ul li img{
+    height: 50px;
+}

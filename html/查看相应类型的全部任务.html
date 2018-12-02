@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <title>查看相应类型的全部任务</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/跑断腿.css"/>
+    <style>
+        .main .container span{
+            position: absolute;
+            top: 20px;
+            left: 15px;
+        }
+        #tab_top #change{
+           margin-left: 40%;
+        }
+        #tab_top .current{
+            border-bottom: 2px solid skyblue;
+            color: #000;
+        }
+        .main .container{
+            height:auto;
+            overflow: visible;
+            position: relative;
+        }
+        .main .container b {
+            position: fixed;
+            width: 15%;
+            min-width: 80px;
+            max-width: 200px;
+            bottom: 10%;
+            right: 5%;
+            z-index: 999;
+        }
+        .main .container b  img{
+            width: 15%;
+            min-width: 80px;
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+<!--大盒子-->
+<div class="main">
+    <div class="container">
+        <b>
+            <a href="发布任务.html"><img src="../img/查看相应类型的全部任务/jia.png" alt=""></a>
+        </b>
+        <a href="耍个懒.html"><span><img src="../img/我要吐槽/fanhui.png" alt="" style="width: 12px;"></span></a>
+        <ul id="tab_top">
+            <li class="current" id="change">取</li>
+            <li>借</li>
+            <li>充</li>
+        </ul>
+        <ul id="tab_bottom">
+            <li>
+                <div class="huodong">
+                    <a href="#"><img src="../img/查看相应类型的全部任务/c1.png" alt=""></a>
+                </div>
+                <div class="huodong">
+                    <a href="#"><img src="../img/查看相应类型的全部任务/c2.png" alt=""></a>
+                </div>
+                <div class="huodong">
+                    <a href="#"><img src="../img/查看相应类型的全部任务/c3.png" alt=""></a>
+                </div>
+                <div class="huodong">
+                    <a href="#"><img src="../img/查看相应类型的全部任务/c3.png" alt=""></a>
+                </div>
+                <div class="huodong">
+                    <a href="#"><img src="../img/查看相应类型的全部任务/c4.png" alt=""></a>
+                </div>
+                <div class="huodong">
+                    <a href="#"><img src="../img/查看相应类型的全部任务/c5.png" alt=""></a>
+                </div>
+                <div class="huodong">
+                <a href="#"><img src="../img/查看相应类型的全部任务/c6.png" alt=""></a>
+                </div>
+            </li>
+            <li class="no">
+                <div class="huodong">
+                    <a href="#"><img src="../img/查看相应类型的全部任务/c5.png" alt=""></a>
+                </div>
+                <div class="huodong">
+                    <a href="#"><img src="../img/查看相应类型的全部任务/c4.png" alt=""></a>
+                </div>
+                <div class="huodong">
+                    <a href="#"><img src="../img/查看相应类型的全部任务/c3.png" alt=""></a>
+                </div>
+                <div class="huodong">
+                    <a href="#"><img src="../img/查看相应类型的全部任务/c2.png" alt=""></a>
+                </div>
+                <div class="huodong">
+                    <a href="#"><img src="../img/查看相应类型的全部任务/c1.png" alt=""></a>
+                </div>
+                <div class="huodong">
+                    <a href="#"><img src="../img/查看相应类型的全部任务/c6.png" alt=""></a>
+                </div>
+            </li>
+            <li class="no">
+                <div class="huodong">
+                    <a href="#"><img src="../img/查看相应类型的全部任务/c3.png" alt=""></a>
+                </div>
+                <div class="huodong">
+                    <a href="#"><img src="../img/查看相应类型的全部任务/c2.png" alt=""></a>
+                </div>
+                <div class="huodong">
+                    <a href="#"><img src="../img/查看相应类型的全部任务/c1.png" alt=""></a>
+                </div>
+                <div class="huodong">
+                    <a href="#"><img src="../img/查看相应类型的全部任务/c5.png" alt=""></a>
+                </div>
+                <div class="huodong">
+                    <a href="#"><img src="../img/查看相应类型的全部任务/c4.png" alt=""></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script>
+        var toplis=document.getElementById("tab_top").children;
+        var bottomlis=document.getElementById("tab_bottom").children;
+        for(var i =0;i<toplis.length;i++){
+            toplis[i].index=i;
+            toplis[i].onmouseenter=function () {
+                for(var j=0;j<toplis.length;j++){
+                    toplis[j].className="";
+                    bottomlis[j].style.display="none";
+                }
+                this.className="current";
+                bottomlis[this.index].style.display="block";
+            }
+        }
+    </script>
+</div>
+</body>
+</html>

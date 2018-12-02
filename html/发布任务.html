@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <title>跑断腿</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/耍个懒.css"/>
+    <style>
+        .container{
+            width: 100%;
+            padding-top: 65px;
+        }
+        .main .ns_header .ns_header_box{
+            height: 52px;
+            background-color: #fff;
+            padding-left: 20px;
+            line-height: 52px;
+            padding-right: 20px;
+            color: #444;
+            font-size: 16px;
+        }
+        /*键盘开始*/
+        .bottom {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            min-width: 300px;
+            max-width: 640px;
+        }
+        .bottom img{
+            width: 100%;
+            min-width: 300px;
+            max-width: 640px;
+            height:40%;
+        }
+        .renwu{
+            width:90%;
+            height: auto;
+            background-color: #f4f1ed;
+            margin:0 auto;
+            border-radius: 3%;
+        }
+        table{
+            padding-left: 5px;
+            padding-bottom: 15px;
+        }
+        table td{
+            border-bottom: 1px dashed #ccc;
+            width: 90%;
+            height: 50px;
+            color: #0C0C0C;
+            font-size: 14px;
+            font-weight:300;
+        }
+        table th{
+            width: 20%;
+            font-size: 14px;
+            font-weight:400;
+        }
+        .main .container table tr{
+        }
+    </style>
+</head>
+<body>
+<!--大盒子-->
+<div class="main">
+    <!--头部搜索-->
+    <header class="ns_header">
+        <div class="ns_header_box">
+            <a href="查看相应类型的全部任务.html"><span style="float: left;">
+                <img src="../img/我要吐槽/fanhui.png" alt="" style="width: 12px;">
+            </span>
+            </a>
+            <span>
+                发布任务
+            </span>
+        </div>
+    </header>
+    <!--轮播图-->
+    <div class="container">
+    <div class="renwu">
+       <table>
+           <tr>
+               <th>描述</th>
+               <td contenteditable="true">
+                   <span id="zi"><img src="../img/发布任务/zi.png" alt=""></span>
+               </td>
+           </tr><tr>
+               <th>时间</th>
+                <td contenteditable="true"></td>
+           </tr><tr>
+               <th>报酬</th>
+                <td contenteditable="true"></td>
+           </tr><tr>
+               <th>联系方式</th>
+                <td contenteditable="true"></td>
+           </tr>
+       </table>
+    </div>
+    </div>
+    <div class="bottom">
+        <img src="../img/发布任务/jianpan.png" alt="">
+    </div>
+</div>
+<script>
+    var td=document.getElementsByTagName("td");
+    var zi=document.getElementById("zi");
+    for(var i =0;i<td.length;i++)
+    td[i].onfocus=function () {
+        this.style.outline="none";
+        zi.style.display="none";
+    }
+</script>
+</body>
+</html>

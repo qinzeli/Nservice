@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <title>跑断腿</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/耍个懒.css"/>
+    <style>
+        .container{
+            background: url("../img/耍个懒/beijing.png") no-repeat;
+            width: 100%;
+            height: 1050px;
+            padding-top: 65px;
+        }
+        .main .ns_header .ns_header_box{
+            height: 52px;
+            background-color: #edeff4;
+            padding-left: 20px;
+            line-height: 52px;
+            padding-right: 20px;
+            color: #444;
+            font-size: 16px;
+        }
+        /*键盘开始*/
+        .bottom {
+            position: fixed;
+            bottom: 60px;
+            width: 100%;
+            min-width: 300px;
+            max-width: 640px;
+        }
+        .bottom img{
+            width: 100%;
+            min-width: 300px;
+            max-width: 640px;
+            height:40%;
+        }
+        .k img{
+            width: 77%;
+            min-width: 250px;
+            max-width:550px;
+            position: relative;
+        }
+        input{
+            resize: none;
+            min-width: 209px;
+            max-width: 550px;
+            width:60%;
+            height: 10%;
+            color: #636363;
+            padding-left: 10px;
+            font-size: 16px;
+            line-height: 18px;
+            position: absolute;
+            top: 5%;
+            left: 21%;
+            background-color: transparent;
+            border:none;
+
+        }
+        ::-webkit-input-placeholder {
+            color: #bebebe;
+            font-size: 14px;
+        }
+        :-moz-placeholder {
+            color: #bebebe;
+            font-size: 14px;
+        }
+        ::-moz-placeholder {
+            color: #bebebe;
+            font-size: 14px;
+        }
+        :-ms-input-placeholder {
+            color: #bebebe;
+            font-size: 14px;}
+        .toux ul{
+            width: 100%;
+            min-width: 300px;
+            max-width: 640px;
+            height: 80px;
+            margin-top: -30px;
+        }
+        .toux ul li {
+            width: 25%;
+            float: left;
+            height: 100%;
+        }
+        .toux ul li img{
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+<!--大盒子-->
+<div class="main">
+    <!--头部搜索-->
+    <header class="ns_header">
+        <div class="ns_header_box">
+            <a href="唉.html"><span style="float: left;">
+                <img src="../img/我要吐槽/fanhui.png" alt="" style="width: 12px;">
+            </span>
+            </a>
+            <span style="float: right;">
+                发表
+            </span>
+        </div>
+    </header>
+    <!--轮播图-->
+    <div class="container">
+        <div class="k" id="k">
+            <img src="../img/我要吐槽/01.png" alt="">
+            <input type="text" placeholder="我有一句话必须要说——">
+        </div>
+        <div class="toux">
+            <ul id="toux">
+                <li><img src="../img/我要吐槽/T1.png" alt=""></li>
+                <li><img src="../img/我要吐槽/T2.png" alt=""></li>
+                <li><img src="../img/我要吐槽/T3.png" alt=""></li>
+                <li><img src="../img/我要吐槽/T4.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom">
+        <img src="../img/我要吐槽/jianpan.png" alt="">
+    </div>
+    <div class="ns-nav">
+        <ul>
+            <li><a href="跑断腿.html"><img src="../img/跑断腿/10.icon.png" alt=""></a></li>
+            <li><a href="耍个懒.html"><img src="../img/跑断腿/2.icon.png" alt=""></a></li>
+            <li><a href="唉.html"><img src="../img/跑断腿/30.icon.png" alt=""></a></li>
+            <li><a href="个人档.html"><img src="../img/跑断腿/4.icon.png" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+<script>
+    function $(id) {
+        return document.getElementById(id);
+    }
+    var touxs=$("toux").children;
+    var k=$("k").children[0];
+    for(var i=0;i<touxs.length;i++){
+        touxs[i].index=i;
+        touxs[i].onmouseenter=function () {
+            k.src="../img/我要吐槽/"+this.index+1+".png";
+        }
+    }
+</script>
+</body>
+</html>
